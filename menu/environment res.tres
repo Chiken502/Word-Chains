@@ -1,0 +1,14 @@
+[gd_resource type="Environment" format=3 uid="uid://bspeva8fib86a"]
+
+[resource]
+background_mode = 3
+glow_enabled = true
+glow_levels/3 = 14.66
+glow_levels/4 = 7.55
+glow_levels/7 = 6.83
+glow_normalized = true
+glow_intensity = 0.6
+glow_bloom = 0.24
+glow_blend_mode = 1
+adjustment_enabled = true
+adjustment_saturation = 1.59

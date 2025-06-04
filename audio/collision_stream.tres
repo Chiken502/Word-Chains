@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://dijaeyc58x205"]
+
+[ext_resource type="AudioStream" uid="uid://rkc0307tc2f0" path="res://audio/collide-01.mp3" id="1_wlmhp"]
+[ext_resource type="AudioStream" uid="uid://2vkbiod3507i" path="res://audio/collide-02.mp3" id="2_3mach"]
+[ext_resource type="AudioStream" uid="uid://c4vmebvjbseeg" path="res://audio/collide-03.mp3" id="3_wic3k"]
+[ext_resource type="AudioStream" uid="uid://cj7c0tndwt13r" path="res://audio/collide-04.mp3" id="4_ihccu"]
+[ext_resource type="AudioStream" uid="uid://lrb21pes2vem" path="res://audio/collide-05.mp3" id="5_6xof6"]
+[ext_resource type="AudioStream" uid="uid://biwnu051u3vxf" path="res://audio/collide-06.mp3" id="6_exrr6"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_wlmhp")
+stream_1/stream = ExtResource("2_3mach")
+stream_2/stream = ExtResource("3_wic3k")
+stream_3/stream = ExtResource("4_ihccu")
+stream_4/stream = ExtResource("5_6xof6")
+stream_5/stream = ExtResource("6_exrr6")

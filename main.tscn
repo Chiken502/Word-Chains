@@ -1,0 +1,121 @@
+[gd_scene load_steps=14 format=3 uid="uid://cdwbu0utwj136"]
+
+[ext_resource type="Script" uid="uid://gtnmqg2on4kb" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://d1kxtxgq3je0k" path="res://letter_conroler.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bpm3bsvserfda" path="res://Word/word.tscn" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bdplijvv8fsaf" path="res://undo arrow.png" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://pts2lsdnrpt6" path="res://undo button.gd" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bqgs5m8jdy2fg" path="res://home icon.png" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://d2q84hoagqy7l" path="res://hint.png" id="7_272bh"]
+
+[sub_resource type="Gradient" id="Gradient_lquwl"]
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.403922)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1bvp3"]
+gradient = SubResource("Gradient_lquwl")
+fill = 1
+fill_from = Vector2(0.536697, 1)
+fill_to = Vector2(0.5, 0.1)
+metadata/_snap_enabled = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+size = Vector2(536, 192)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7dm0k"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ig7tw"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="Environment" id="Environment_0xm2m"]
+background_mode = 3
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 2.82
+glow_strength = 1.29
+glow_bloom = 0.07
+glow_blend_mode = 1
+adjustment_enabled = true
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_1bvp3")
+
+[node name="ColorRect" type="TextureRect" parent="."]
+offset_right = 520.0
+offset_bottom = 904.0
+texture = SubResource("GradientTexture2D_1bvp3")
+
+[node name="Bottom" type="StaticBody2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Bottom"]
+offset_left = -16.0
+offset_top = 712.0
+offset_right = 520.0
+offset_bottom = 904.0
+color = Color(0.00438758, 0.0337284, 0.0933143, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom"]
+position = Vector2(252, 808)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="world border" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="world border"]
+position = Vector2(0, 400)
+shape = SubResource("WorldBoundaryShape2D_7dm0k")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="world border"]
+position = Vector2(512, 400)
+shape = SubResource("WorldBoundaryShape2D_ig7tw")
+
+[node name="Word" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(0, 154)
+
+[node name="Letter Conroler" type="Node2D" parent="."]
+script = ExtResource("2_0xm2m")
+
+[node name="UndoButton" type="TextureButton" parent="."]
+offset_left = 432.0
+offset_top = 24.0
+offset_right = 491.0
+offset_bottom = 78.0
+texture_normal = ExtResource("4_1bvp3")
+texture_pressed = ExtResource("4_1bvp3")
+texture_hover = ExtResource("4_1bvp3")
+texture_disabled = ExtResource("4_1bvp3")
+texture_focused = ExtResource("4_1bvp3")
+script = ExtResource("5_lquwl")
+hovered_color = Color(0.839216, 0.866667, 1, 1)
+
+[node name="HomeButton" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 19.0
+offset_right = 79.0
+offset_bottom = 67.0
+texture_normal = ExtResource("6_7mycd")
+texture_pressed = ExtResource("6_7mycd")
+texture_hover = ExtResource("6_7mycd")
+texture_disabled = ExtResource("6_7mycd")
+texture_focused = ExtResource("6_7mycd")
+script = ExtResource("5_lquwl")
+hovered_color = Color(0.839216, 0.866667, 1, 1)
+
+[node name="HintButton" type="TextureButton" parent="."]
+offset_left = 464.0
+offset_top = 816.0
+offset_right = 490.0
+offset_bottom = 872.0
+texture_normal = ExtResource("7_272bh")
+texture_pressed = ExtResource("7_272bh")
+texture_hover = ExtResource("7_272bh")
+texture_disabled = ExtResource("7_272bh")
+texture_focused = ExtResource("7_272bh")
+script = ExtResource("5_lquwl")
+pressed_color = Color(1, 0.913725, 0.380392, 1)
+hovered_color = Color(1, 0.976471, 0.839216, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0xm2m")
+
+[connection signal="pressed" from="UndoButton" to="Word" method="_on_undo_button_pressed"]
+[connection signal="pressed" from="HomeButton" to="Word" method="_on_home_button_pressed"]

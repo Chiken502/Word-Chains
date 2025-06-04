@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Word Chains"
+run/main_scene="uid://cktrc4cge3jsh"
+config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0.0156863, 0.117647, 0.25098, 1)
+config/icon="res://icon.svg"
+
+[autoload]
+
+DictionaryManager="*res://dictionary/dictionary_manager.gd"
+GameMangager="*res://gamemangager.gd"
+LevelsDatabase="*res://levels/levelsDatabase.gd"
+
+[display]
+
+window/size/viewport_width=506
+window/size/viewport_height=900
+window/size/always_on_top=true
+window/stretch/mode="canvas_items"
+
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
+[file_customization]
+
+folder_colors={
+"res://Word/": "blue",
+"res://audio/": "purple",
+"res://dictionary/": "green",
+"res://font/": "gray",
+"res://letter images/": "yellow"
+}
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.0156863, 0.117647, 0.25098, 1)

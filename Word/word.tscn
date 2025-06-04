@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://bpm3bsvserfda"]
+
+[ext_resource type="Script" uid="uid://3ivhegl0u5pe" path="res://Word/word.gd" id="1_vl1uy"]
+[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://font/Zain-Regular.ttf" id="2_axjox"]
+[ext_resource type="AudioStream" uid="uid://cbih2m52giy1j" path="res://audio/Connect 01.mp3" id="2_twhsu"]
+[ext_resource type="AudioStream" uid="uid://ca58fgstqak1i" path="res://audio/Connect 02.mp3" id="3_53peu"]
+[ext_resource type="AudioStream" uid="uid://bwvqdpc82iv38" path="res://audio/Connect 03.mp3" id="4_axjox"]
+[ext_resource type="AudioStream" uid="uid://bxmb8ppqp8wdv" path="res://audio/Connect 04.mp3" id="5_dymxt"]
+[ext_resource type="AudioStream" uid="uid://djm4rc5m4nj8k" path="res://audio/complete.mp3" id="6_53peu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3q3ku"]
+font = ExtResource("2_axjox")
+font_size = 60
+font_color = Color(0.380392, 0.486275, 1, 1)
+outline_size = 2
+outline_color = Color(0.380392, 0.486275, 1, 1)
+
+[sub_resource type="Theme" id="Theme_1amgx"]
+HBoxContainer/constants/separation = 30
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_41agb"]
+streams_count = 4
+stream_0/stream = ExtResource("2_twhsu")
+stream_1/stream = ExtResource("3_53peu")
+stream_2/stream = ExtResource("4_axjox")
+stream_3/stream = ExtResource("5_dymxt")
+
+[node name="Word" type="Node2D"]
+modulate = Color(1, 1, 1, 0)
+script = ExtResource("1_vl1uy")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 504.0
+offset_bottom = 184.0
+
+[node name="target" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "BEAR"
+label_settings = SubResource("LabelSettings_3q3ku")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_1amgx")
+alignment = 1
+
+[node name="succses" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_41agb")
+
+[node name="complete" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_53peu")

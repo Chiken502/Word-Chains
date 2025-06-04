@@ -1,0 +1,198 @@
+[gd_scene load_steps=14 format=3 uid="uid://cktrc4cge3jsh"]
+
+[ext_resource type="Texture2D" uid="uid://bdji6futhojsm" path="res://menu button.png" id="1_g18jx"]
+[ext_resource type="Script" uid="uid://c0nfpetf0w1w2" path="res://menu/menu.gd" id="1_svuvw"]
+[ext_resource type="Script" uid="uid://pts2lsdnrpt6" path="res://undo button.gd" id="2_6nwqt"]
+[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://font/Zain-Regular.ttf" id="3_pbjm4"]
+[ext_resource type="FontFile" uid="uid://c0x8p6xqfone1" path="res://font/Zain-Black.ttf" id="4_svuvw"]
+[ext_resource type="Shader" uid="uid://uwq1f0553vkx" path="res://menu/glow.gdshader" id="6_v6yed"]
+
+[sub_resource type="Theme" id="Theme_pbjm4"]
+VBoxContainer/constants/separation = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_juveg"]
+font = ExtResource("3_pbjm4")
+font_size = 50
+font_color = Color(0.0117647, 0.0784314, 0.168627, 1)
+outline_size = 12
+outline_color = Color(0.0117647, 0.0784314, 0.168627, 1)
+
+[sub_resource type="Gradient" id="Gradient_pbjm4"]
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.403922)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jc4t8"]
+gradient = SubResource("Gradient_pbjm4")
+fill = 1
+fill_from = Vector2(0.536697, 1)
+fill_to = Vector2(0.5, 0.1)
+metadata/_snap_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_v6yed"]
+font = ExtResource("4_svuvw")
+font_size = 80
+shadow_size = 18
+shadow_color = Color(0.0117647, 0.0784314, 0.168627, 0.509804)
+shadow_offset = Vector2(6, 4)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s4hbh"]
+shader = ExtResource("6_v6yed")
+shader_parameter/hpass = 1.0
+shader_parameter/vpass = 1.0
+shader_parameter/radius = 65
+
+[sub_resource type="Environment" id="Environment_juveg"]
+background_mode = 3
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 2.82
+glow_strength = 1.29
+glow_bloom = 0.07
+glow_blend_mode = 1
+adjustment_enabled = true
+adjustment_saturation = 1.84
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_svuvw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 506.0
+offset_bottom = 900.0
+
+[node name="vBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -153.5
+offset_right = 153.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_pbjm4")
+alignment = 1
+
+[node name="Easy Button" type="TextureButton" parent="Control/vBoxContainer"]
+self_modulate = Color(0.607843, 1, 0.545098, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_g18jx")
+texture_pressed = ExtResource("1_g18jx")
+texture_hover = ExtResource("1_g18jx")
+texture_disabled = ExtResource("1_g18jx")
+texture_focused = ExtResource("1_g18jx")
+script = ExtResource("2_6nwqt")
+normal_color = Color(0.607843, 1, 0.545098, 1)
+pressed_color = Color(0.462745, 1, 0.376471, 1)
+hovered_color = Color(0.862745, 1, 0.843137, 1)
+
+[node name="Label" type="Label" parent="Control/vBoxContainer/Easy Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "EASY LEVELS"
+label_settings = SubResource("LabelSettings_juveg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Medium Button" type="TextureButton" parent="Control/vBoxContainer"]
+self_modulate = Color(0.541176, 0.619608, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_g18jx")
+texture_pressed = ExtResource("1_g18jx")
+texture_hover = ExtResource("1_g18jx")
+texture_disabled = ExtResource("1_g18jx")
+texture_focused = ExtResource("1_g18jx")
+script = ExtResource("2_6nwqt")
+normal_color = Color(0.541176, 0.619608, 1, 1)
+hovered_color = Color(0.839216, 0.866667, 1, 1)
+
+[node name="Label" type="Label" parent="Control/vBoxContainer/Medium Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MEDIUM LEVELS"
+label_settings = SubResource("LabelSettings_juveg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hard Button" type="TextureButton" parent="Control/vBoxContainer"]
+self_modulate = Color(1, 0.541176, 0.541176, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_g18jx")
+texture_pressed = ExtResource("1_g18jx")
+texture_hover = ExtResource("1_g18jx")
+texture_disabled = ExtResource("1_g18jx")
+texture_focused = ExtResource("1_g18jx")
+script = ExtResource("2_6nwqt")
+normal_color = Color(1, 0.541176, 0.541176, 1)
+pressed_color = Color(1, 0.380392, 0.380392, 1)
+hovered_color = Color(1, 0.839216, 0.839216, 1)
+
+[node name="Label" type="Label" parent="Control/vBoxContainer/Hard Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "HARD LEVELS"
+label_settings = SubResource("LabelSettings_juveg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="background gradient" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_jc4t8")
+
+[node name="base color" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 712.0
+offset_right = 520.0
+offset_bottom = 904.0
+mouse_filter = 2
+color = Color(0.00438758, 0.0337284, 0.0933143, 1)
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -253.0
+offset_right = 253.0
+offset_bottom = 247.0
+grow_horizontal = 2
+text = "WORD  CHIANS"
+label_settings = SubResource("LabelSettings_v6yed")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+material = SubResource("ShaderMaterial_s4hbh")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_juveg")
+
+[connection signal="pressed" from="Control/vBoxContainer/Easy Button" to="." method="_on_easy_button_pressed"]
+[connection signal="pressed" from="Control/vBoxContainer/Medium Button" to="." method="_on_medium_button_pressed"]
+[connection signal="pressed" from="Control/vBoxContainer/Hard Button" to="." method="_on_hard_button_pressed"]
