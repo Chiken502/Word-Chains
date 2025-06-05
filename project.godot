@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Word Chains"
-run/main_scene="uid://cktrc4cge3jsh"
+run/main_scene="uid://4ywptwh1bnl8"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0.0156863, 0.117647, 0.25098, 1)
 config/icon="res://icon.svg"
