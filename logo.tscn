@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://4ywptwh1bnl8"]
 
 [ext_resource type="Script" uid="uid://dghqq0euvqnek" path="res://logo.gd" id="1_hgdat"]
-[ext_resource type="VideoStream" path="res://menu/Logo Intro.ogv" id="1_iyh20"]
+[ext_resource type="VideoStream" uid="uid://cu1jfwc7usmt4" path="res://menu/Logo Intro.ogv" id="1_iyh20"]
 
 [node name="Logo" type="Node2D"]
 script = ExtResource("1_hgdat")

@@ -16,7 +16,7 @@ func set_level():
 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Called every frame. detterines what state button is in and acts accordingly
 func _process(delta: float) -> void:
 	if disabled:
 		self_modulate = disabled_color
@@ -26,14 +26,7 @@ func _process(delta: float) -> void:
 		self_modulate = hovered_color
 	else:
 		self_modulate = normal_color
-	
-	#if get_parent().get_node("Word").undo_history:
-		#disabled = false
-	#else:
-		#disabled = true
-#
-	#if get_parent().get_node("Word").completed:
-		#disabled = true
+
 
 
 func _on_pressed() -> void:
