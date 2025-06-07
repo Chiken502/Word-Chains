@@ -4,10 +4,10 @@ var difficulty : int
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var difficulty = GameMangager.level_mode
-	print(difficulty)
+	var difficulty = GameMangager.level_mode # Gets difficulty
+	#print(difficulty)
 	
-	match GameMangager.level_mode:
+	match GameMangager.level_mode:  # Changes home button to match the difficulty
 		GameMangager.EASY:
 			$Control/TextureButton.pressed_color = Color("76ff60")
 			$Control/TextureButton.hovered_color = Color("dcffd7")
@@ -21,6 +21,7 @@ func _ready() -> void:
 	
 	spawn_buttons()
 
+# Spawns buttons for every level in the selected difficulty
 func spawn_buttons():
 	print("spawning")
 	var levels : Array[Array]
@@ -41,7 +42,7 @@ func spawn_buttons():
 	var size = levels.size()
 	print(size)
 	for i in size:
-		var button = preload("res://level_select/level_Select_button.tscn").instantiate()
+		var button = preload("res://Level Select/level_Select_button.tscn").instantiate()
 		button.level = i + 1
 		$Control/GridContainer.add_child(button)
 		

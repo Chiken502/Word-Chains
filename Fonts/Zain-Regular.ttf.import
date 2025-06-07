@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c0x8p6xqfone1"
-path="res://.godot/imported/Zain-Black.ttf-c82685a98c3f8f4ce4d008634a35c843.fontdata"
+uid="uid://c6vqwhkbrsmtk"
+path="res://.godot/imported/Zain-Regular.ttf-61fca69b2b797511c9f4a109e6eb3f14.fontdata"
 
 [deps]
 
-source_file="res://font/Zain-Black.ttf"
-dest_files=["res://.godot/imported/Zain-Black.ttf-c82685a98c3f8f4ce4d008634a35c843.fontdata"]
+source_file="res://Fonts/Zain-Regular.ttf"
+dest_files=["res://.godot/imported/Zain-Regular.ttf-61fca69b2b797511c9f4a109e6eb3f14.fontdata"]
 
 [params]
 

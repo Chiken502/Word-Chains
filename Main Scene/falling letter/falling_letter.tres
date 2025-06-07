@@ -1,6 +1,6 @@
 [gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bdt2qkwrf4pgx"]
 
-[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://font/Zain-Regular.ttf" id="1_40fbj"]
+[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://Fonts/Zain-Regular.ttf" id="1_40fbj"]
 
 [resource]
 font = ExtResource("1_40fbj")

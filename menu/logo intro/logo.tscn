@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://4ywptwh1bnl8"]
 
-[ext_resource type="Script" uid="uid://dghqq0euvqnek" path="res://logo.gd" id="1_hgdat"]
-[ext_resource type="VideoStream" uid="uid://cu1jfwc7usmt4" path="res://menu/Logo Intro.ogv" id="1_iyh20"]
+[ext_resource type="Script" uid="uid://dghqq0euvqnek" path="res://menu/logo intro/logo.gd" id="1_d7jn8"]
+[ext_resource type="VideoStream" uid="uid://cu1jfwc7usmt4" path="res://menu/logo intro/Logo Intro.ogv" id="2_c5fev"]
 
 [node name="Logo" type="Node2D"]
-script = ExtResource("1_hgdat")
+script = ExtResource("1_d7jn8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 512.0
@@ -17,7 +17,7 @@ offset_top = 302.0
 offset_right = 1914.0
 offset_bottom = 1382.0
 scale = Vector2(0.27, 0.27)
-stream = ExtResource("1_iyh20")
+stream = ExtResource("2_c5fev")
 autoplay = true
 
 [connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

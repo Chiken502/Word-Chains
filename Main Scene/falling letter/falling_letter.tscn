@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bgscci2mkmir7"]
 
-[ext_resource type="Script" uid="uid://buibyx6iiw8mc" path="res://falling_letter.gd" id="1_wd0ba"]
-[ext_resource type="LabelSettings" uid="uid://bdt2qkwrf4pgx" path="res://falling_letter.tres" id="2_r0wbp"]
-[ext_resource type="AudioStream" uid="uid://dijaeyc58x205" path="res://audio/collision_stream.tres" id="3_68bxr"]
+[ext_resource type="Script" uid="uid://buibyx6iiw8mc" path="res://Main Scene/falling letter/falling_letter.gd" id="1_wd0ba"]
+[ext_resource type="LabelSettings" uid="uid://bdt2qkwrf4pgx" path="res://Main Scene/falling letter/falling_letter.tres" id="2_r0wbp"]
+[ext_resource type="AudioStream" uid="uid://dijaeyc58x205" path="res://Audio/collision_stream.tres" id="3_68bxr"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wd0ba"]
 rough = true

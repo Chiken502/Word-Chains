@@ -32,4 +32,4 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	GameMangager.current_level = level
 	GameMangager.load_level(level)
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://Main Scene/main.tscn")

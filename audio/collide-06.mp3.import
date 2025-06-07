@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://biwnu051u3vxf"
-path="res://.godot/imported/collide-06.mp3-f3359b8db2275bd1cfd5148d8bb7855f.mp3str"
+path="res://.godot/imported/collide-06.mp3-e0fced3e4a2e5da508a69a04f6b1cfc1.mp3str"
 
 [deps]
 
-source_file="res://audio/collide-06.mp3"
-dest_files=["res://.godot/imported/collide-06.mp3-f3359b8db2275bd1cfd5148d8bb7855f.mp3str"]
+source_file="res://Audio/collide-06.mp3"
+dest_files=["res://.godot/imported/collide-06.mp3-e0fced3e4a2e5da508a69a04f6b1cfc1.mp3str"]
 
 [params]
 

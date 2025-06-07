@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://baf7d1woronfj"
-path="res://.godot/imported/Zain-Italic.ttf-2bf987d80d8014feed30cd5c4ddf7a19.fontdata"
+path="res://.godot/imported/Zain-Italic.ttf-711d226b9b89e361249e5b9e7e121215.fontdata"
 
 [deps]
 
-source_file="res://font/Zain-Italic.ttf"
-dest_files=["res://.godot/imported/Zain-Italic.ttf-2bf987d80d8014feed30cd5c4ddf7a19.fontdata"]
+source_file="res://Fonts/Zain-Italic.ttf"
+dest_files=["res://.godot/imported/Zain-Italic.ttf-711d226b9b89e361249e5b9e7e121215.fontdata"]
 
 [params]
 

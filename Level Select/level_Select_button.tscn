@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cucr2jc6epv11"]
 
 [ext_resource type="Texture2D" uid="uid://c8pcycemj87va" path="res://Word/word_selector.tres" id="1_omynu"]
-[ext_resource type="Script" uid="uid://b8c7cahmog37r" path="res://level_select/level_select_button.gd" id="2_0ix7o"]
-[ext_resource type="FontFile" uid="uid://c0x8p6xqfone1" path="res://font/Zain-Black.ttf" id="3_k85ju"]
+[ext_resource type="Script" uid="uid://b8c7cahmog37r" path="res://Level Select/level_select_button.gd" id="2_0ix7o"]
+[ext_resource type="FontFile" uid="uid://c0x8p6xqfone1" path="res://Fonts/Zain-Black.ttf" id="3_k85ju"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_apu6u"]
 font = ExtResource("3_k85ju")

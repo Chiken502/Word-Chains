@@ -18,9 +18,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DictionaryManager="*res://dictionary/dictionary_manager.gd"
-GameMangager="*res://gamemangager.gd"
-LevelsDatabase="*res://levels/levelsDatabase.gd"
+DictionaryManager="*res://Globals/Auto Loads/dictionary/dictionary_manager.gd"
+GameMangager="*res://Globals/Auto Loads/gamemangager.gd"
+LevelsDatabase="*res://Globals/Auto Loads/levels/levelsDatabase.gd"
 
 [display]
 
@@ -37,11 +37,11 @@ version_control/autoload_on_startup=true
 [file_customization]
 
 folder_colors={
-"res://Word/": "blue",
-"res://audio/": "purple",
-"res://dictionary/": "green",
-"res://font/": "gray",
-"res://letter images/": "yellow"
+"res://Audio/": "purple",
+"res://Fonts/": "gray",
+"res://Globals/Auto Loads/dictionary/": "green",
+"res://Letter Images/": "yellow",
+"res://Word/": "blue"
 }
 
 [rendering]

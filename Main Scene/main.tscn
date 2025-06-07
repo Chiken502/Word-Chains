@@ -1,12 +1,12 @@
 [gd_scene load_steps=14 format=3 uid="uid://cdwbu0utwj136"]
 
-[ext_resource type="Script" uid="uid://gtnmqg2on4kb" path="res://main.gd" id="1_1bvp3"]
-[ext_resource type="Script" uid="uid://d1kxtxgq3je0k" path="res://letter_conroler.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://gtnmqg2on4kb" path="res://Main Scene/main.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://d1kxtxgq3je0k" path="res://Main Scene/letter_conroler.gd" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bpm3bsvserfda" path="res://Word/word.tscn" id="3_h2yge"]
-[ext_resource type="Texture2D" uid="uid://bdplijvv8fsaf" path="res://undo arrow.png" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://pts2lsdnrpt6" path="res://undo button.gd" id="5_lquwl"]
-[ext_resource type="Texture2D" uid="uid://bqgs5m8jdy2fg" path="res://home icon.png" id="6_7mycd"]
-[ext_resource type="Texture2D" uid="uid://d2q84hoagqy7l" path="res://hint.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://bdplijvv8fsaf" path="res://Buttons/undo arrow.png" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://pts2lsdnrpt6" path="res://Buttons/undo button.gd" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bqgs5m8jdy2fg" path="res://Buttons/home icon.png" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://d2q84hoagqy7l" path="res://Buttons/hint.png" id="7_272bh"]
 
 [sub_resource type="Gradient" id="Gradient_lquwl"]
 colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.403922)

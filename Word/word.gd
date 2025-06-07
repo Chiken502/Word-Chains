@@ -128,7 +128,7 @@ func _on_undo_button_pressed() -> void:
 		var letter_node_sprite : Sprite2D = letter_node.get_node("Sprite2D")
 		var letter_node_pos = letter_node_sprite.global_position
 		
-		var falling_letter = preload("res://falling_letter.tscn").instantiate()
+		var falling_letter = preload("res://Main Scene/falling letter/falling_letter.tscn").instantiate()
 		get_parent().add_child(falling_letter) # adds letter to main scene
 		falling_letter.position = letter_node_pos
 		falling_letter.letter = current_char[index]
@@ -146,4 +146,4 @@ func reset_self():
 
 
 func _on_home_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://level_select/level_select.tscn")
+	get_tree().change_scene_to_file("res://Level Select/level_select.tscn")

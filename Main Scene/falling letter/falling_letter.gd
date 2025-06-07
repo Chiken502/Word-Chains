@@ -29,7 +29,7 @@ func get_ready():
 	self.center_of_mass_mode = 1
 	$Sprite2D.position = $Label.position
 	#var texture = await capture_label_image($Label)
-	var texture_path = "res://letter images/" + letter_path + ".res"
+	var texture_path = "res://Letter Images/" + letter_path + ".res"
 	$Sprite2D.texture = load(texture_path)
 	
 	#ResourceSaver.save(texture, "res://letter images/" + letter_path +".res")
@@ -99,7 +99,7 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 
 func play_collision_sound(volume_factor: float):
 	var sound_player = AudioStreamPlayer.new()
-	sound_player.stream = preload("res://audio/collision_stream.tres")
+	sound_player.stream = preload("res://Audio/collision_stream.tres")
 	
 	sound_player.volume_db = linear_to_db(volume_factor)
 	

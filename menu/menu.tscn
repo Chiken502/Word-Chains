@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=3 uid="uid://cktrc4cge3jsh"]
 
-[ext_resource type="Texture2D" uid="uid://bdji6futhojsm" path="res://menu button.png" id="1_g18jx"]
+[ext_resource type="Texture2D" uid="uid://bdji6futhojsm" path="res://Buttons/menu button.png" id="1_g18jx"]
 [ext_resource type="Script" uid="uid://c0nfpetf0w1w2" path="res://menu/menu.gd" id="1_svuvw"]
-[ext_resource type="Script" uid="uid://pts2lsdnrpt6" path="res://undo button.gd" id="2_6nwqt"]
-[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://font/Zain-Regular.ttf" id="3_pbjm4"]
-[ext_resource type="FontFile" uid="uid://c0x8p6xqfone1" path="res://font/Zain-Black.ttf" id="4_svuvw"]
+[ext_resource type="Script" uid="uid://pts2lsdnrpt6" path="res://Buttons/undo button.gd" id="2_6nwqt"]
+[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://Fonts/Zain-Regular.ttf" id="3_pbjm4"]
+[ext_resource type="FontFile" uid="uid://c0x8p6xqfone1" path="res://Fonts/Zain-Black.ttf" id="4_svuvw"]
 [ext_resource type="Shader" uid="uid://uwq1f0553vkx" path="res://menu/glow.gdshader" id="6_v6yed"]
 [ext_resource type="PackedScene" uid="uid://bdgoqegirmtk4" path="res://menu/transition_layer.tscn" id="7_v6yed"]
 

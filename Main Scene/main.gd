@@ -11,10 +11,6 @@ func get_ready():
 	solution = GameMangager.solution
 	spawn_letters()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func spawn_letters():
 	var shuffled = solution.duplicate()
 	if solution is PackedStringArray:
@@ -25,7 +21,7 @@ func spawn_letters():
 	var letter_pos = []
 	
 	for l in shuffled:
-		var letter = preload("res://falling_letter.tscn").instantiate()
+		var letter = preload("res://Main Scene/falling letter/falling_letter.tscn").instantiate()
 		#get_parent().add_child(letter)
 		add_child(letter)
 		letter.position = Vector2(randi_range(100, get_viewport_rect().size.x - 100), -80)

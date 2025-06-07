@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdji6futhojsm"
-path="res://.godot/imported/menu button.png-e6984b78bf89def215a346b6e3300a5d.ctex"
+uid="uid://bdplijvv8fsaf"
+path="res://.godot/imported/undo arrow.png-14a88a8e60c03bc9cf7a6bdb9ee513db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menu button.png"
-dest_files=["res://.godot/imported/menu button.png-e6984b78bf89def215a346b6e3300a5d.ctex"]
+source_file="res://Buttons/undo arrow.png"
+dest_files=["res://.godot/imported/undo arrow.png-14a88a8e60c03bc9cf7a6bdb9ee513db.ctex"]
 
 [params]
 

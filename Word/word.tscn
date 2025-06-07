@@ -1,12 +1,12 @@
 [gd_scene load_steps=11 format=3 uid="uid://bpm3bsvserfda"]
 
 [ext_resource type="Script" uid="uid://3ivhegl0u5pe" path="res://Word/word.gd" id="1_vl1uy"]
-[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://font/Zain-Regular.ttf" id="2_axjox"]
-[ext_resource type="AudioStream" uid="uid://cbih2m52giy1j" path="res://audio/Connect 01.mp3" id="2_twhsu"]
-[ext_resource type="AudioStream" uid="uid://ca58fgstqak1i" path="res://audio/Connect 02.mp3" id="3_53peu"]
-[ext_resource type="AudioStream" uid="uid://bwvqdpc82iv38" path="res://audio/Connect 03.mp3" id="4_axjox"]
-[ext_resource type="AudioStream" uid="uid://bxmb8ppqp8wdv" path="res://audio/Connect 04.mp3" id="5_dymxt"]
-[ext_resource type="AudioStream" uid="uid://djm4rc5m4nj8k" path="res://audio/complete.mp3" id="6_53peu"]
+[ext_resource type="FontFile" uid="uid://c6vqwhkbrsmtk" path="res://Fonts/Zain-Regular.ttf" id="2_axjox"]
+[ext_resource type="AudioStream" uid="uid://cbih2m52giy1j" path="res://Audio/Connect 01.mp3" id="2_twhsu"]
+[ext_resource type="AudioStream" uid="uid://ca58fgstqak1i" path="res://Audio/Connect 02.mp3" id="3_53peu"]
+[ext_resource type="AudioStream" uid="uid://bwvqdpc82iv38" path="res://Audio/Connect 03.mp3" id="4_axjox"]
+[ext_resource type="AudioStream" uid="uid://bxmb8ppqp8wdv" path="res://Audio/Connect 04.mp3" id="5_dymxt"]
+[ext_resource type="AudioStream" uid="uid://djm4rc5m4nj8k" path="res://Audio/complete.mp3" id="6_53peu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3q3ku"]
 font = ExtResource("2_axjox")

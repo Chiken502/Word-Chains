@@ -19,7 +19,7 @@ func is_legal_word(word : String) -> bool:
 	return word.to_lower() in words
 
 func get_file_contents():
-	var file_path = "res://dictionary/12dicts_words.txt"
+	var file_path = "res://Globals/Auto Loads/dictionary/12dicts_words.txt"
 	var file = FileAccess.open(file_path, FileAccess.READ)
 	#var file = ResourceLoader.load(file_path)
 	

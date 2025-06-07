@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c4be7amaumk82"
-path="res://.godot/imported/Zain-ExtraLight.ttf-05ce7a505f22be286b0e4c4e2d256a67.fontdata"
+uid="uid://mkqgil1escg4"
+path="res://.godot/imported/Zain-Bold.ttf-b5345d055fc01abadc51feb00acd1309.fontdata"
 
 [deps]
 
-source_file="res://font/Zain-ExtraLight.ttf"
-dest_files=["res://.godot/imported/Zain-ExtraLight.ttf-05ce7a505f22be286b0e4c4e2d256a67.fontdata"]
+source_file="res://Fonts/Zain-Bold.ttf"
+dest_files=["res://.godot/imported/Zain-Bold.ttf-b5345d055fc01abadc51feb00acd1309.fontdata"]
 
 [params]
 

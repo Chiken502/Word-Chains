@@ -26,4 +26,4 @@ func to_level_select(diffuclty : difficult):
 	GameMangager.level_mode = diffuclty # saves difficulty
 	#print(GameMangager.level_mode) #debuging
 	#print(diffuclty)
-	get_tree().change_scene_to_file("res://level_select/level_select.tscn")
+	get_tree().change_scene_to_file("res://Level Select/level_select.tscn")
